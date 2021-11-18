@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Sceny/Pok\xF3j-1.unity"
+    path: Assets/Sceny/Korytarz - Level Select.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 587a0b3294c541241aa929f3caf58159, type: 2}
