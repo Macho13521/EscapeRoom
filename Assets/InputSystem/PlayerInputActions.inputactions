@@ -90,6 +90,52 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Mouse",
+            "id": "68a5a445-06c2-4c41-8393-b083b2beef41",
+            "actions": [
+                {
+                    "name": "current",
+                    "type": "Value",
+                    "id": "f0026eae-ee4e-4878-9a85-2e8d6970ae9d",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "click",
+                    "type": "Button",
+                    "id": "6f705048-e1ec-491b-bfd5-758b7aa67de5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "51ef9d93-2738-4053-9fdb-f913cc501bc9",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "current",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1f1cbd38-2606-478f-8e10-d24fba88def3",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []

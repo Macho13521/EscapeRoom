@@ -66,25 +66,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        var vcam = other.GetComponent<CinemachineVirtualCamera>();
-
-        if (vcam != null)
-        {
-            vcam.Priority = 20;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        var vcam = other.GetComponent<CinemachineVirtualCamera>();
-
-        if (vcam != null)
-        {
-            vcam.Priority = 1;
-        }
-    }
+    
 
 
 }
