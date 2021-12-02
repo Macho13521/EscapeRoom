@@ -9,6 +9,12 @@ public class ZamekController : MonoBehaviour
     private CinemachineVirtualCamera vcam;
     PlayerInputActions playerInputActions;
 
+    public GameObject[] przyciski;
+    public GameObject przyciskOk;
+    public GameObject przyciskCancel;
+    public TextMesh textMesh;
+    public int MaxTextLength;
+
     private void Start()
     {
         vcam = gameObject.GetComponent<CinemachineVirtualCamera>();
@@ -52,8 +58,24 @@ public class ZamekController : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
-            Debug.Log("Clicked on " + hit.transform.name);
+            foreach (var przycisk in przyciski)
+            {
+                if (hit.transform.gameObject.Equals(przycisk))
+                {
+                    if(textMesh.text.Length < MaxTextLength)
+                    textMesh.text += hit.transform.name;
+                }
+            }
+
+            if (hit.transform.gameObject.Equals(przyciskOk))
+            {
+                Debug.Log("Clicked on " + hit.transform.name);
+            }
+            else if (hit.transform.gameObject.Equals(przyciskCancel))
+            {
+                textMesh.text = string.Empty;
+            }
+
         }
-        
     }
 }

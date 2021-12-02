@@ -745,6 +745,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33ca08291754b0d4bbd93e7bfabf3f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  przyciski:
+  - {fileID: 8250671211663452970}
+  - {fileID: 2840031183381344281}
+  - {fileID: 3925486668188180715}
+  - {fileID: 2384334419753764857}
+  - {fileID: 8122986357833561504}
+  - {fileID: 5176173295375925466}
+  - {fileID: 703098757424517655}
+  - {fileID: 4274309432897470221}
+  - {fileID: 6903773023676266180}
+  - {fileID: 2014746750580197575}
+  przyciskOk: {fileID: 7592360484882201423}
+  przyciskCancel: {fileID: 6073369737453553920}
+  textMesh: {fileID: 4694269385157966909}
+  MaxTextLength: 4
 --- !u!1 &4687119760377771466
 GameObject:
   m_ObjectHideFlags: 0
