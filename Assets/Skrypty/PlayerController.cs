@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     PlayerInputActions playerInputActions;
 
     public GameObject camera;
+    public GameObject vcam;
     float rotationY = 0;
 
     void Start()
@@ -62,7 +63,9 @@ public class PlayerController : MonoBehaviour
         rotationY = Mathf.Clamp(rotationY, -90f, 90f);
 
         camera.transform.localRotation = Quaternion.Euler(rotationY, 0, 0);
+        vcam.transform.localRotation = Quaternion.Euler(rotationY, 0, 0);
         transform.Rotate(Vector3.up * mouse.x);
+        
 
     }
 

@@ -15,11 +15,13 @@ public class ZamekController : MonoBehaviour
     public TextMesh textMesh;
     public int MaxTextLength;
 
+
     private void Start()
     {
         vcam = gameObject.GetComponent<CinemachineVirtualCamera>();
         playerInputActions = new PlayerInputActions();
         playerInputActions.Mouse.Enable();
+        playerInputActions.Player.Enable();
         playerInputActions.Mouse.click.performed += OnClicked;
     }
 
@@ -46,10 +48,7 @@ public class ZamekController : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
 
-    }
 
     void OnClicked(InputAction.CallbackContext context)
     {
