@@ -1,7 +1,9 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -32,7 +34,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
-        
+
     }
 
     private void Update()
@@ -44,18 +46,18 @@ public class PlayerController : MonoBehaviour
     public void Movement()
     {
         Vector2 inputVector = playerInputActions.Player.Movement.ReadValue<Vector2>();
-        rb.velocity = (transform.right *inputVector.x + transform.forward * inputVector.y )* speed;
+        rb.velocity = (transform.right * inputVector.x + transform.forward * inputVector.y) * speed;
     }
 
     public void MouseRotation()
     {
         Vector2 inputVector = playerInputActions.Player.Rotation.ReadValue<Vector2>();
-        
+
 
         Vector2 mouse = new Vector2(inputVector.x * mouseSensitivity * Time.deltaTime,
             inputVector.y * mouseSensitivity * Time.deltaTime);
 
-        
+
         rotationY -= mouse.y;
         rotationY = Mathf.Clamp(rotationY, -90f, 90f);
 
@@ -63,4 +65,26 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(Vector3.up * mouse.x);
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        var vcam = other.GetComponent<CinemachineVirtualCamera>();
+
+        if (vcam != null)
+        {
+            vcam.Priority = 20;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        var vcam = other.GetComponent<CinemachineVirtualCamera>();
+
+        if (vcam != null)
+        {
+            vcam.Priority = 1;
+        }
+    }
+
+
 }
