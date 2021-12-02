@@ -13,13 +13,20 @@ public class FirstMysteryGen : MonoBehaviour
     [SerializeField]
     int puzzleGenAmount;
 
+    [SerializeField]
+    int mysteryCode;
+
+    int[] puzzleTypeAmount;
+
     Vector2 puzzleSize = new Vector2();
 
+    
 
     void Start()
     {
         if (puzzle.Length > 0)
         {
+            puzzleTypeAmount = new int[puzzle.Length]; 
             puzzleSize = new Vector2( 
                 puzzle[0].GetComponent<MeshRenderer>().bounds.size.x,
                 puzzle[0].GetComponent<MeshRenderer>().bounds.size.z);
@@ -35,7 +42,6 @@ public class FirstMysteryGen : MonoBehaviour
     {
         if ((roomSize.x * roomSize.y) >= (puzzleSize.x*puzzleSize.y)*puzzleGenAmount)
         {
-            Debug.Log("if");
             for (float j=0; j<roomSize.y; j+=puzzleSize.y)
             {
                 
@@ -45,11 +51,19 @@ public class FirstMysteryGen : MonoBehaviour
                     if(random == 0)
                     {
                         var randomPuzzle = Random.Range(0, puzzle.Length);
+
+                        
+                        if (puzzleTypeAmount[randomPuzzle] >= 9)
+                            continue;
+
+                        puzzleTypeAmount[randomPuzzle]++;
+
+
                         var _puzzle = Instantiate(
                             puzzle[randomPuzzle],
                             transform.position + new Vector3(i, -0.93f, j),
                             Quaternion.Euler(-90,0,0));
-                        //_puzzle.transform.parent = transform;
+                        _puzzle.transform.parent = transform;
                         
                     }
                 }
@@ -60,7 +74,13 @@ public class FirstMysteryGen : MonoBehaviour
             puzzleGenAmount--;
             Gen();
         }
+
+        for (int i = 0; i < puzzleTypeAmount.Length; i++)
+        {
+            mysteryCode += (int)Mathf.Pow(10, i) * puzzleTypeAmount[i];
+        }
     }
+
 
     // Update is called once per frame
     void Update()
