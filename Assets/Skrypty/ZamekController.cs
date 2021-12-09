@@ -15,7 +15,6 @@ public class ZamekController : MonoBehaviour
     public TextMesh textMesh;
     public int MaxTextLength;
 
-
     private void Start()
     {
         vcam = gameObject.GetComponent<CinemachineVirtualCamera>();
@@ -63,18 +62,37 @@ public class ZamekController : MonoBehaviour
                 {
                     if(textMesh.text.Length < MaxTextLength)
                     textMesh.text += hit.transform.name;
+
+                    var buttonAnim = przycisk.GetComponent<ButtonAnimation>();
+                    if (buttonAnim != null)
+                    {
+                        buttonAnim.StartAnimation();
+                    }
                 }
             }
 
             if (hit.transform.gameObject.Equals(przyciskOk))
             {
                 Debug.Log("Clicked on " + hit.transform.name);
+                var buttonAnim = przyciskOk.GetComponent<ButtonAnimation>();
+                if (buttonAnim != null)
+                {
+                    buttonAnim.StartAnimation();
+                }
             }
             else if (hit.transform.gameObject.Equals(przyciskCancel))
             {
                 textMesh.text = string.Empty;
+                var buttonAnim = przyciskCancel.GetComponent<ButtonAnimation>();
+                if (buttonAnim != null)
+                {
+                    buttonAnim.StartAnimation();
+                }
             }
-
+            
         }
     }
+
+
+
 }
