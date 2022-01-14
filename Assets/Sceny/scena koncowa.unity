@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.9714, y: -31}
-  m_SizeDelta: {x: 605.4293, y: 423.797}
+  m_AnchoredPosition: {x: -0.00086213, y: 35}
+  m_SizeDelta: {x: 869.08, y: 419.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &83538624
 MonoBehaviour:
@@ -182,20 +182,20 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e55869ce9e19c60458fc86289ed2a7cb, type: 3}
-    m_FontSize: 29
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 55
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Alaszewicz \u0141ukasz - Level Designer \nDudek Kamil - Programmer \nKruk
-    Maja - 2D Graphics \nPachciarek Szymon - 3D Graphics\nSzil Patryk - Designer
-    \nYerentiuk Yaroslav - 3D Graphics\n\n"
+  m_Text: "Alaszewicz Lukasz - Level Designer \n\nDudek Kamil - Programmer \n\nKruk
+    Maja - 2D Graphics \n\nPachciarek Szymon - 3D Graphics\n\nSzil Patryk - Designer
+    \n\nYerentiuk Yaroslav - 3D Graphics\n\n"
 --- !u!222 &83538625
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -476,13 +476,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 83538623}
+  - {fileID: 1992064991}
   m_Father: {fileID: 1674508867}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.1303711, y: -14.226898}
-  m_SizeDelta: {x: -712.688, y: -204.3777}
+  m_AnchoredPosition: {x: 0, y: -4.4226074}
+  m_SizeDelta: {x: -486.742, y: -165.0385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175145136
 MonoBehaviour:
@@ -697,4 +698,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1738078530}
+  m_CullTransparentMesh: 1
+--- !u!1 &1992064990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1992064991}
+  - component: {fileID: 1992064993}
+  - component: {fileID: 1992064992}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1992064991
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992064990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1175145135}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1, y: -226.39093}
+  m_SizeDelta: {x: 315.973, y: 106.6646}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1992064992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992064990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e55869ce9e19c60458fc86289ed2a7cb, type: 3}
+    m_FontSize: 58
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 58
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'THE END '
+--- !u!222 &1992064993
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992064990}
   m_CullTransparentMesh: 1
