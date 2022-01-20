@@ -86,13 +86,5 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void onSoundVolumeChange(float soundVolume)
-    {
-        masterSoundvolume = soundVolume;
-    }
-
-    public void onMusicVolumeChange(float musicVolume)
-    {
-        masterMusicvolume = musicVolume;
-    }
+    
 }

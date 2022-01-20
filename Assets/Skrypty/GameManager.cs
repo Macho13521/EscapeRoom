@@ -45,10 +45,12 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(name);
     }
 
+
     public void exitGame()
     {
         Application.Quit();
     }
 
+    
 
 }

@@ -1083,8 +1083,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 123403599}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+      - m_Target: {fileID: 990589065}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: onSoundVolumeChange
         m_Mode: 0
         m_Arguments:
@@ -1489,6 +1489,7 @@ GameObject:
   - component: {fileID: 990589064}
   - component: {fileID: 990589063}
   - component: {fileID: 990589062}
+  - component: {fileID: 990589065}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1552,6 +1553,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &990589065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990589061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 154149cb7da7f4e45bed863de8490492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  musicSlider: {fileID: 1783487373}
+  soundSlider: {fileID: 563642212}
 --- !u!1 &1050950698
 GameObject:
   m_ObjectHideFlags: 0
@@ -2747,8 +2763,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 123403599}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+      - m_Target: {fileID: 990589065}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: onMusicVolumeChange
         m_Mode: 0
         m_Arguments:
