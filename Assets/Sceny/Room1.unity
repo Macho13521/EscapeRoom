@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0031255293, g: 0.006151021, b: 0.014129606, a: 1}
+  m_IndirectSpecularColor: {r: 0.0031383112, g: 0.006175163, b: 0.014198319, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1205,6 +1205,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4984027834205007283, guid: f3bb07be0541f1e47ab30329edbdf448, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a0f2c2fe4f9974047b33e73daa070fe6, type: 2}
     - target: {fileID: 7166378348958526060, guid: f3bb07be0541f1e47ab30329edbdf448, type: 3}
       propertyPath: m_Name
       value: ZamekDoDrzwi (1)
@@ -1384,7 +1388,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
