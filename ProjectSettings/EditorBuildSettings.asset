@@ -6,8 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: "Assets/Sceny/Menu g\u0142\xF3wne.unity"
+    guid: b0fd107d5492a924b8deb5316df53f7d
+  - enabled: 1
     path: Assets/Sceny/Korytarz - Level Select.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Sceny/LoadingScreen.unity
+    guid: 50d62913e62bc6740988049e7b158475
+  - enabled: 1
+    path: Assets/Sceny/Room1.unity
+    guid: dfe3cc75886af1f4886e988c3cbf18c2
+  - enabled: 1
+    path: Assets/Sceny/Room2.unity
+    guid: a723a0fdac3caeb44a77d89bd2e1bb48
+  - enabled: 1
+    path: Assets/Sceny/Room3.unity
+    guid: aeda7450800448244a1a743913093e1f
+  - enabled: 1
+    path: Assets/Sceny/scena koncowa.unity
+    guid: 3afde3ab046ff1b409396d441fc309b9
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 587a0b3294c541241aa929f3caf58159, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 12fe07dbe3c14aa4db7df3f7854e6d8d, type: 2}

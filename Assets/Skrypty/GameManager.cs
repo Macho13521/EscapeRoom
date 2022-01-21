@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
         RoomLigthsUpdate?.Invoke(this.room);
     }
 
+    public int getRoomLvl() { return room; }
+
     public void loadSceen(string name)
     {
         SceneManager.LoadScene(name);
