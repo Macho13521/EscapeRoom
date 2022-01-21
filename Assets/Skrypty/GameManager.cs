@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public static GameManager Instance { get { return _instance; } }
 
-    public Action<int> RoomLigthsUpdate;
+    
 
     private int room;
 
@@ -30,14 +30,17 @@ public class GameManager : MonoBehaviour
     private void Init()
     {
         this.room = 0;
-        setRoomLvl(this.room);
         
     }
 
     public void setRoomLvl(int room)
     {
         this.room = room;
-        RoomLigthsUpdate?.Invoke(this.room);
+    }
+
+    public int getRoomLbl()
+    {
+        return room;
     }
 
     public int getRoomLvl() { return room; }

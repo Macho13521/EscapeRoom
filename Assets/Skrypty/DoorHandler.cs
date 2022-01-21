@@ -6,7 +6,9 @@ public class DoorHandler : MonoBehaviour
 {
     public bool canOpen = false;
 
-
+    public BlackOut blackOut;
+    public string lvlName = "";
+    public int lvl =0;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,13 +19,32 @@ public class DoorHandler : MonoBehaviour
             {
                 GetComponent<Animation>().Play();
                 Invoke("ChangeSceen", 0.4f);
+                blackOut.FadeInFadeOut();
             }
         }
     }
 
     void ChangeSceen()
     {
-        int room = GameManager.Instance.getRoomLvl() + 1;
-        GameManager.Instance.loadSceen("Room"+ room);
+
+        if (lvlName == "")
+        {
+            if (lvl > GameManager.Instance.getRoomLvl())
+                GameManager.Instance.setRoomLvl(lvl);
+            GameManager.Instance.loadSceen("Korytarz - Level Select");
+        }
+        else if (lvlName == "Korytarz - Level Select")
+        {
+            if (lvl > GameManager.Instance.getRoomLvl())
+                GameManager.Instance.setRoomLvl(lvl);
+            GameManager.Instance.loadSceen("Korytarz - Level Select");
+        }
+
+        else
+        {
+            GameManager.Instance.loadSceen(lvlName);
+        } 
+        
+        
     }
 }

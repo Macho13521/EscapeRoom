@@ -27,7 +27,7 @@ public class MenuManager : MonoBehaviour
                 if (pauseMenu.activeSelf)
                 {
                     Time.timeScale = 0;
-                    Cursor.lockState = CursorLockMode.Confined;
+                    Cursor.lockState = CursorLockMode.None;
                 }
                 else
                 {

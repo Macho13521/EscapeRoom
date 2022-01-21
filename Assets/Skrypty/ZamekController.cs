@@ -1,4 +1,5 @@
 using Cinemachine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,9 @@ public class ZamekController : MonoBehaviour
     public GameObject przyciskCancel;
     public TextMesh textMesh;
     public int MaxTextLength;
+
+    private int code;
+    public DoorHandler door;
 
     private void Start()
     {
@@ -79,6 +83,10 @@ public class ZamekController : MonoBehaviour
                 {
                     buttonAnim.StartAnimation();
                 }
+                if (textMesh.text == code.ToString())
+                {
+                    door.canOpen = true;
+                }
             }
             else if (hit.transform.gameObject.Equals(przyciskCancel))
             {
@@ -93,6 +101,9 @@ public class ZamekController : MonoBehaviour
         }
     }
 
-
+    public void SetCode(int code)
+    {
+        this.code = code;
+    }
 
 }

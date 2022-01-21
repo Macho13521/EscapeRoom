@@ -20,7 +20,7 @@ public class FirstMysteryGen : MonoBehaviour
 
     Vector2 puzzleSize = new Vector2();
 
-    
+    public ZamekController zamek;
 
     void Start()
     {
@@ -33,8 +33,8 @@ public class FirstMysteryGen : MonoBehaviour
             Gen();
         }
 
-        
-
+        if (zamek != null)
+            zamek.SetCode(mysteryCode);
     }
 
 

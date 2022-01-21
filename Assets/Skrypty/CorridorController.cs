@@ -21,7 +21,7 @@ public class CorridorController : MonoBehaviour
         doorLights[0].enabled = true;
         doors[0].canOpen = true;
 
-        GameManager.Instance.RoomLigthsUpdate += OnRoomLightningUpdate;
+        OnRoomLightningUpdate(GameManager.Instance.getRoomLvl());
     }
 
     void OnRoomLightningUpdate(int room)
