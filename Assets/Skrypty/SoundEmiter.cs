@@ -10,6 +10,8 @@ public class SoundEmiter : MonoBehaviour
 
     public Action<int> EmitSoundRadio;
 
+    public string soundName;
+
     private void OnTriggerStay(Collider other)
     {
         PlayerController playerC = other.gameObject.GetComponent<PlayerController>();
@@ -27,7 +29,8 @@ public class SoundEmiter : MonoBehaviour
     private void EmitSound()
     {
         EmitSoundRadio?.Invoke(soundKey);
-        //AudioManager.instance.PlaySound("sound1");
+        if(soundName != String.Empty)
+            AudioManager.instance.PlaySound(soundName);
 
     }
 }

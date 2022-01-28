@@ -10,6 +10,8 @@ public class DoorHandler : MonoBehaviour
     public string lvlName = "";
     public int lvl =0;
 
+  
+
     private void OnTriggerEnter(Collider other)
     {
         PlayerController playerC = other.gameObject.GetComponent<PlayerController>();
@@ -17,16 +19,19 @@ public class DoorHandler : MonoBehaviour
         {
             if (canOpen)
             {
-                GetComponent<Animation>().Play();
-                Invoke("ChangeSceen", 0.4f);
+                AudioManager.instance.PlaySound("doorOpen");
+                Animation anim = GetComponent<Animation>();
+                anim.Play();
                 blackOut.FadeInFadeOut();
+                Invoke("ChangeSceen", 0.9f);
+                
             }
         }
     }
 
     void ChangeSceen()
     {
-
+        
         if (lvlName == "")
         {
             if (lvl > GameManager.Instance.getRoomLvl())

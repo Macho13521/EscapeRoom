@@ -47,11 +47,11 @@ public class RadioHandler : MonoBehaviour
         {
             rightSoundCode += sounds[Random.Range(0, sounds.Count)];
         }
+        Debug.Log("Right SounCode: " + rightSoundCode);
     }
 
     private void EmitedSound(int soundKey)
     {
-        Debug.Log("Emitted Sound: " + soundKey);
 
         soundCode += soundKey;
         if (soundCode.Length < soundAmount)
@@ -62,6 +62,7 @@ public class RadioHandler : MonoBehaviour
         else if(soundCode == rightSoundCode)
         {
             door.canOpen = true;
+            AudioManager.instance.PlaySound("otwarcieZamka");
         }
     }
 }

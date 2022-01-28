@@ -159,151 +159,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5.0000153, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &123403598
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 123403600}
-  - component: {fileID: 123403599}
-  - component: {fileID: 123403601}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &123403599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123403598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67e206da402b3a14194dd3147b53dc43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds: []
-  musics: []
-  loopMusic: 0
-  masterSoundvolume: 0.516
-  masterMusicvolume: 0.529
---- !u!4 &123403600
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123403598}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 399.54022, y: -182.88568, z: -10.578818}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &123403601
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123403598}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &201676158
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +171,7 @@ GameObject:
   - component: {fileID: 201676161}
   - component: {fileID: 201676160}
   - component: {fileID: 201676159}
+  - component: {fileID: 201676163}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -397,8 +253,8 @@ RectTransform:
   m_Children:
   - {fileID: 1337533247}
   - {fileID: 2147296010}
-  - {fileID: 1974166002}
   - {fileID: 1507634690}
+  - {fileID: 1974166002}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -407,6 +263,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &201676163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201676158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 154149cb7da7f4e45bed863de8490492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 1507634689}
+  musicSlider: {fileID: 1783487373}
+  soundSlider: {fileID: 563642212}
 --- !u!1 &225129296
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +864,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447263170}
   m_CullTransparentMesh: 1
+--- !u!1001 &483879241
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 399.54022
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -182.88568
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.578818
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7171428674815544108, guid: 685071ace18be704394de0d731cf3df2, type: 3}
+      propertyPath: m_Name
+      value: AudioManager (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 685071ace18be704394de0d731cf3df2, type: 3}
 --- !u!1 &563642210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +932,7 @@ GameObject:
   - component: {fileID: 563642211}
   - component: {fileID: 563642212}
   m_Layer: 5
-  m_Name: Slider (1)
+  m_Name: SoundSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1083,7 +1011,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 990589065}
+      - m_Target: {fileID: 201676163}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: onSoundVolumeChange
         m_Mode: 0
@@ -1489,7 +1417,6 @@ GameObject:
   - component: {fileID: 990589064}
   - component: {fileID: 990589063}
   - component: {fileID: 990589062}
-  - component: {fileID: 990589065}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1553,21 +1480,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &990589065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990589061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 154149cb7da7f4e45bed863de8490492, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
-  musicSlider: {fileID: 1783487373}
-  soundSlider: {fileID: 563642212}
 --- !u!1 &1050950698
 GameObject:
   m_ObjectHideFlags: 0
@@ -2549,7 +2461,7 @@ RectTransform:
   - {fileID: 370137381}
   - {fileID: 892011807}
   m_Father: {fileID: 201676162}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2684,7 +2596,7 @@ GameObject:
   - component: {fileID: 1783487372}
   - component: {fileID: 1783487373}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: MusicSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2763,7 +2675,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 990589065}
+      - m_Target: {fileID: 201676163}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: onMusicVolumeChange
         m_Mode: 0
@@ -2975,7 +2887,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1974166001
 GameObject:
@@ -3012,7 +2924,7 @@ RectTransform:
   - {fileID: 1490678654}
   - {fileID: 278162329}
   m_Father: {fileID: 201676162}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

@@ -28,8 +28,11 @@ public class CorridorController : MonoBehaviour
     {
         if (room > 0 && room < doorLights.Length)
         {
-            doorLights[room].enabled = true;
-            doors[room].canOpen = true;
+            for (int i = 0; i <= room; i++)
+            {
+                doorLights[i].enabled = true;
+                doors[i].canOpen = true;
+            }
         }
     }
 }

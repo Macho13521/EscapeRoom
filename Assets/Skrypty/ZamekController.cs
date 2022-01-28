@@ -16,6 +16,8 @@ public class ZamekController : MonoBehaviour
     public TextMesh textMesh;
     public int MaxTextLength;
 
+    
+
     private int code;
     public DoorHandler door;
 
@@ -77,7 +79,6 @@ public class ZamekController : MonoBehaviour
 
             if (hit.transform.gameObject.Equals(przyciskOk))
             {
-                Debug.Log("Clicked on " + hit.transform.name);
                 var buttonAnim = przyciskOk.GetComponent<ButtonAnimation>();
                 if (buttonAnim != null)
                 {
@@ -86,6 +87,12 @@ public class ZamekController : MonoBehaviour
                 if (textMesh.text == code.ToString())
                 {
                     door.canOpen = true;
+                    AudioManager.instance.PlaySound("otwarcieZamka");
+                }
+                else
+                {
+                    AudioManager.instance.PlaySound("zamekPinError");
+
                 }
             }
             else if (hit.transform.gameObject.Equals(przyciskCancel))
@@ -104,6 +111,7 @@ public class ZamekController : MonoBehaviour
     public void SetCode(int code)
     {
         this.code = code;
+        Debug.Log("Code:" + code);
     }
 
 }

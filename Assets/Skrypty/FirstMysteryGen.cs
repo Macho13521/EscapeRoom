@@ -27,6 +27,10 @@ public class FirstMysteryGen : MonoBehaviour
         if (puzzle.Length > 0)
         {
             puzzleTypeAmount = new int[puzzle.Length]; 
+            for(int i =0; i<puzzle.Length; i++)
+            {
+                puzzleTypeAmount[i] = 0;
+            }
             puzzleSize = new Vector2( 
                 puzzle[0].GetComponent<MeshRenderer>().bounds.size.x,
                 puzzle[0].GetComponent<MeshRenderer>().bounds.size.z);
