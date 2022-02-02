@@ -33,8 +33,10 @@ public class Lock : MonoBehaviour
             vcam.Priority = 20;
             Cursor.lockState = CursorLockMode.None;
             if (GameManager.Instance.lockpick)
+            {
                 playerIsTrigger = true;
-            zamekCanvas.SetActive(true);
+                zamekCanvas.SetActive(true);
+            }
         }
     }
 
