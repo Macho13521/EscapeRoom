@@ -28,7 +28,8 @@ public class RadioHandler : MonoBehaviour
         {
             if(Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.E))
             {
-                //AudioManager.instance.PlaySound("sound1");
+                StopAllCoroutines();
+                StartCoroutine(MytserySounds());
             }
 
         }
@@ -63,6 +64,16 @@ public class RadioHandler : MonoBehaviour
         {
             door.canOpen = true;
             AudioManager.instance.PlaySound("otwarcieZamka");
+        }
+    }
+
+    IEnumerator MytserySounds()
+    {
+        for (int i = 0; i < soundAmount; i++) {
+            int x = int.Parse(rightSoundCode[i].ToString());
+            soundEmiters[x].PlaySound();
+            yield return new WaitForSeconds(2);
+
         }
     }
 }

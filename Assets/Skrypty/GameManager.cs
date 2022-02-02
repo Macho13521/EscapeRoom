@@ -9,9 +9,10 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public static GameManager Instance { get { return _instance; } }
 
-    
+
 
     private int room;
+    public bool lockpick {get; set;}
 
     private void Awake()
     {
@@ -30,7 +31,7 @@ public class GameManager : MonoBehaviour
     private void Init()
     {
         this.room = 0;
-        
+        this.lockpick = false;
     }
 
     public void setRoomLvl(int room)
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    
     
 
 }
