@@ -17,7 +17,7 @@ public class SoundEmiter : MonoBehaviour
         PlayerController playerC = other.gameObject.GetComponent<PlayerController>();
         if (playerC != null)
         {
-            if (Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("Sound: " + soundKey);
                 EmitSound();
