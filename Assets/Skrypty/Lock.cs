@@ -15,6 +15,9 @@ public class Lock : MonoBehaviour
 
     public GameObject zamekCanvas;
 
+
+    public Animation animation;
+
     private void Start()
     {
         vcam = gameObject.GetComponent<CinemachineVirtualCamera>();
@@ -29,7 +32,8 @@ public class Lock : MonoBehaviour
 
             vcam.Priority = 20;
             Cursor.lockState = CursorLockMode.None;
-            playerIsTrigger = true;
+            if (GameManager.Instance.lockpick)
+                playerIsTrigger = true;
             zamekCanvas.SetActive(true);
         }
     }
@@ -61,10 +65,11 @@ public class Lock : MonoBehaviour
     {
         if (playerIsTrigger)
         {
-            if(Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
                 ChangelockPin(0);
             if (Input.GetKeyDown(KeyCode.RightArrow))
                 ChangelockPin(1);
+
         }
     }
 
@@ -86,8 +91,9 @@ public class Lock : MonoBehaviour
         }
         else if (Code == rightCode)
         {
-            door.canOpen = true;
+            //door.canOpen = true;
             AudioManager.instance.PlaySound("otwarcieZamka");
+            animation.Play();
         }
         else
         {

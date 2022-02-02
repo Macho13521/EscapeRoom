@@ -29,8 +29,13 @@ public class SoundEmiter : MonoBehaviour
     private void EmitSound()
     {
         EmitSoundRadio?.Invoke(soundKey);
-        if(soundName != String.Empty)
-            AudioManager.instance.PlaySound(soundName);
+        PlaySound();
 
+    }
+
+    public void PlaySound()
+    {
+        if (soundName != String.Empty)
+            AudioManager.instance.PlaySound(soundName);
     }
 }
