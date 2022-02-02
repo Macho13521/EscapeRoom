@@ -38,7 +38,7 @@ public class FirstMysteryGen : MonoBehaviour
         }
 
         if (zamek != null)
-            zamek.SetCode(mysteryCode);
+            zamek.SetCode(mysteryCode.ToString());
     }
 
 

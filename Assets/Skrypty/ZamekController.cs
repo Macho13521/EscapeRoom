@@ -18,7 +18,7 @@ public class ZamekController : MonoBehaviour
 
     
 
-    private int code;
+    private string code;
     public DoorHandler door;
 
     private void Start()
@@ -84,7 +84,7 @@ public class ZamekController : MonoBehaviour
                 {
                     buttonAnim.StartAnimation();
                 }
-                if (textMesh.text == code.ToString())
+                if (textMesh.text == code)
                 {
                     door.canOpen = true;
                     AudioManager.instance.PlaySound("otwarcieZamka");
@@ -108,7 +108,7 @@ public class ZamekController : MonoBehaviour
         }
     }
 
-    public void SetCode(int code)
+    public void SetCode(string code)
     {
         this.code = code;
         Debug.Log("Code:" + code);
