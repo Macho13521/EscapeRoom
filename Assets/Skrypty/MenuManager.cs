@@ -56,4 +56,9 @@ public class MenuManager : MonoBehaviour
     {
         AudioManager.instance.masterMusicvolume = musicVolume;
     }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
