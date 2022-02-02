@@ -1762,8 +1762,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 564575647019698210, guid: f3bb07be0541f1e47ab30329edbdf448, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: -0.072
       objectReference: {fileID: 0}
+    - target: {fileID: 4106362636230902144, guid: f3bb07be0541f1e47ab30329edbdf448, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4cba2bf2cf897a4aa1450b30f63115b, type: 2}
     - target: {fileID: 4694269385157966909, guid: f3bb07be0541f1e47ab30329edbdf448, type: 3}
       propertyPath: m_Text
       value: 
@@ -1776,13 +1780,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c132edb22fa3b984db087d307000827c, type: 2}
+    - target: {fileID: 5559650617713468717, guid: f3bb07be0541f1e47ab30329edbdf448, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f4cba2bf2cf897a4aa1450b30f63115b, type: 2}
     - target: {fileID: 7166378348958526060, guid: f3bb07be0541f1e47ab30329edbdf448, type: 3}
       propertyPath: m_Name
       value: ZamekDoDrzwi
       objectReference: {fileID: 0}
     - target: {fileID: 7511942121495556310, guid: f3bb07be0541f1e47ab30329edbdf448, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 7511942121495556310, guid: f3bb07be0541f1e47ab30329edbdf448, type: 3}
       propertyPath: m_LocalScale.x
@@ -1798,7 +1806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7511942121495556310, guid: f3bb07be0541f1e47ab30329edbdf448, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.838
+      value: -1.828
       objectReference: {fileID: 0}
     - target: {fileID: 7511942121495556310, guid: f3bb07be0541f1e47ab30329edbdf448, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2742,7 +2750,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 7171428674815544107, guid: 685071ace18be704394de0d731cf3df2, type: 3}
       propertyPath: m_LocalPosition.x
