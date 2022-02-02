@@ -10,7 +10,7 @@ public class LockPickHandler : MonoBehaviour
         PlayerController playerC = other.gameObject.GetComponent<PlayerController>();
         if (playerC != null)
         {
-            if (Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 AudioManager.instance.PlaySound("otwarcieZamka");
                 GameManager.Instance.lockpick = true;
