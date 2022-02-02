@@ -81,7 +81,7 @@ public class FirstMysteryGen : MonoBehaviour
 
         for (int i = 0; i < puzzleTypeAmount.Length; i++)
         {
-            mysteryCode += (int)Mathf.Pow(10, i) * puzzleTypeAmount[i];
+            mysteryCode += (int)Mathf.Pow(10, i) * puzzleTypeAmount[puzzleTypeAmount.Length-i -1];
         }
     }
 
