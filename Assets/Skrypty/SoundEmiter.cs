@@ -11,18 +11,34 @@ public class SoundEmiter : MonoBehaviour
     public Action<int> EmitSoundRadio;
 
     public string soundName;
+    private bool isTrigger = false;
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         PlayerController playerC = other.gameObject.GetComponent<PlayerController>();
         if (playerC != null)
+        {
+            isTrigger = true;
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+
+        isTrigger = false;
+
+    }
+
+    private void Update()
+    {
+        if(isTrigger)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("Sound: " + soundKey);
                 EmitSound();
             }
-
         }
     }
 

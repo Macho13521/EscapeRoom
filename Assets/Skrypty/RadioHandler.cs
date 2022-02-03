@@ -12,6 +12,8 @@ public class RadioHandler : MonoBehaviour
     public string soundCode;
     public DoorHandler door;
 
+    private bool isTrigger = false;
+
     private void Start()
     {
         GenSoundCode();
@@ -21,17 +23,30 @@ public class RadioHandler : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         PlayerController playerC = other.gameObject.GetComponent<PlayerController>();
         if (playerC != null)
         {
-            if(Input.GetKeyDown(KeyCode.E))
+            isTrigger = true;
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        isTrigger = false;
+    }
+
+    private void Update()
+    {
+        if (isTrigger)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 StopAllCoroutines();
                 StartCoroutine(MytserySounds());
             }
-
         }
     }
 
