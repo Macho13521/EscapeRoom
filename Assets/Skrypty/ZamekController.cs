@@ -72,6 +72,7 @@ public class ZamekController : MonoBehaviour
                     var buttonAnim = przycisk.GetComponent<ButtonAnimation>();
                     if (buttonAnim != null)
                     {
+                        AudioManager.instance.PlaySound("zamekclick");
                         buttonAnim.StartAnimation();
                     }
                 }

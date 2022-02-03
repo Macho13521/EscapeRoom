@@ -72,6 +72,12 @@ MonoBehaviour:
   - name: zamekPinError
     clip: {fileID: 8300000, guid: 98deb5d77b6c0af4fbb29f0e1d7a2afe, type: 3}
     volume: 1
+  - name: wytrych
+    clip: {fileID: 8300000, guid: d1e7258d4db57554db888d3eefac62cd, type: 3}
+    volume: 1
+  - name: zamekclick
+    clip: {fileID: 8300000, guid: 853712d671e6a144e9a7989c799b5ea6, type: 3}
+    volume: 1
   musics: []
   loopMusic: 0
   masterSoundvolume: 0.516

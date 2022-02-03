@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0031383222, g: 0.0061751734, b: 0.014198324, a: 1}
+  m_IndirectSpecularColor: {r: 0.0031383112, g: 0.006175163, b: 0.014198319, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -301,7 +301,7 @@ CapsuleCollider:
   m_Radius: 0.24
   m_Height: 2.02
   m_Direction: 1
-  m_Center: {x: 0.17, y: -0.58, z: 0}
+  m_Center: {x: 0.26, y: 0, z: 0}
 --- !u!4 &61844999
 Transform:
   m_ObjectHideFlags: 0
@@ -649,10 +649,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.24
+  m_Radius: 0.27
   m_Height: 2.02
   m_Direction: 1
-  m_Center: {x: 0.17, y: -0.58, z: 0}
+  m_Center: {x: 0.38, y: 0, z: 0}
 --- !u!4 &333994378
 Transform:
   m_ObjectHideFlags: 0
@@ -2493,10 +2493,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.24
-  m_Height: 2.02
+  m_Radius: 0.27
+  m_Height: 2.42
   m_Direction: 1
-  m_Center: {x: 0.17, y: -0.58, z: 0}
+  m_Center: {x: 0.17, y: 0, z: 0}
 --- !u!4 &2120370294
 Transform:
   m_ObjectHideFlags: 0

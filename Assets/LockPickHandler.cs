@@ -12,7 +12,7 @@ public class LockPickHandler : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                AudioManager.instance.PlaySound("otwarcieZamka");
+                AudioManager.instance.PlaySound("wytrych");
                 GameManager.Instance.lockpick = true;
                 Destroy(gameObject);
             }
